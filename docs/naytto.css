@@ -1,0 +1,820 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+body {
+    font-family: "Open Sans";
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+a:any-link {
+    color: rgb(202, 145, 255);
+    text-decoration: none;
+}
+
+.banner {
+    background-color: rgb(107, 107, 107);
+    color: white;
+    width: 100%;
+    height: 120px;
+}
+
+.banner-teksti {
+    justify-self: center;
+    color: rgb(202, 145, 255)
+}
+
+.ylapalkki {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    height: 88px;
+}
+
+.ylapalkki-kuva {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    flex-direction: column;
+    justify-content: left;
+    margin: 10px 91px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.ylapalkki-teksti {
+    display: flex;
+    height: 20px;
+    color: white;
+    padding-bottom: 13px;
+    font-size: 23px;
+}
+
+.jokuhaku {
+    display: flex;
+    margin-left: 110px;
+}
+
+.haku-ylapalkki {
+    display: flex;
+    width: 265px;
+    height: 55px;
+    border-radius: 9px;
+    border-width: 1px;
+    padding-left: 20px;
+    padding-top: 3px;
+    font-size: 17px;
+}
+
+.haku1000 {
+    display: none;
+}
+
+.napit {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+.nappi-ylapalkki {
+    display: flex;
+    flex-direction: column;
+    border-color: white;
+    background: rgb(21, 21, 21);
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 230px;
+    font-size: 25px;
+    justify-content: center;
+    border-width: 1px;
+    border-radius: 9px;
+    border-color: #dedede;
+}
+
+.nappi-ylapalkki__toka {
+    display: flex;
+    flex-direction: column;
+    border-color: white;
+    background: #4C5FD5;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 140px;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    border-width: 0px;
+    border-radius: 9px;
+}
+
+.nappi-ylapalkki__kolmas {
+    display: none;
+    height: 20px;
+    border-color: white;
+    background: #000000;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+    padding-left: 30px;
+    justify-content: center;
+    font-size: 24px;
+    align-items: center;
+    border-width: 0px;
+    border-radius: 5px;
+    padding-bottom: 3px;
+}
+
+.nappi-kuva {
+    display: flex;
+    height: 30px;
+    padding-top: 1px;
+}
+
+.ylempi-keskirivi {
+    display: flex;
+    align-items: center;
+    background-color: #dadbf1;
+    flex-direction: column;
+    height: 397px;
+}
+
+.ylempi-keskirivi-teksti {
+    display: flex;
+    padding-bottom: 37px;
+    padding-top: 85px;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.haku {
+    display: flex;
+    height: 65px;
+    width: 720px;
+    border-radius: 4px;
+    border-width: 1px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.haku1 {
+    display: flex;
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 230px;
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+}
+
+.alempi-keskirivi {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-right: 200px;
+}
+
+.alempi-keskirivi-vasen {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 100px;
+    padding-top: 145px;
+    padding-left: 200px;
+}
+
+.alempi-keskirivi-oikea {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 100px;
+    padding-top: 145px;
+}
+
+.branches {
+    display: flex;
+}
+
+.branches-kuva {
+    display: flex;
+    height: 70px;
+    width: 70px;
+    padding-top: 50px;
+}
+
+.branches2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.branches-otsikko {
+    display: flex;
+    height: 20px;
+    padding-top: 50px;
+    flex-direction: column;
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+.branches-teksti {
+    display: flex;
+    width: 300px;
+    padding-top: 10px;
+    font-size: 21px;
+}
+
+.branches-linkki {
+    display: flex;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.account {
+    display: flex;
+    padding-top: 50px;
+}
+
+.account-kuva {
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+.account2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.account-otsikko {
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+}
+
+.account-teksti {
+    display: flex;
+    width: 300px;
+    padding-top: 10px;
+    font-size: 21px;
+}
+
+.account-linkki {
+    display: flex;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.manage {
+    display: flex;
+    padding-top: 120px;
+}
+
+.manage-kuva {
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+.manage2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.manage-otsikko {
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+}
+
+.manage-teksti {
+    display: flex;
+    font-size: 21px;
+    width: 300px;
+    padding-top: 10px;
+}
+
+.manage-linkki {
+    display: flex;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.billing {
+    display: flex;
+    padding-top: 150px;
+}
+
+.billing-kuva {
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+.billing2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.billing-otsikko {
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+}
+
+.billing-teksti {
+    display: flex;
+    width: 300px;
+    padding-top: 10px;
+    font-size: 21px;
+}
+
+.billing-linkki {
+    display: flex;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.authenticate {
+    display: flex;
+    padding-top: 120px;
+}
+
+.authenticate-kuva {
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+.authenticate2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.authenticate-otsikko {
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+}
+
+.authenticate-teksti {
+    display: flex;
+    width: 300px;
+    padding-top: 10px;
+    font-size: 21px;
+}
+
+.authenticate-linkki {
+    display: flex;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.support {
+    display: flex;
+    padding-top: 210px;
+}
+
+.support-kuva {
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+.support-kuva__image {
+    display: flex;
+    width: 100%;
+}
+
+.support2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.support-otsikko {
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+}
+
+.support-teksti {
+    display: flex;
+    width: 300px;
+    padding-top: 10px;
+    font-size: 21px;
+}
+
+.support-linkki {
+    display: flex;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.alapalkki {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 402px;
+}
+
+.alapalkki-vasen {
+    display: flex;
+}
+
+.pibble {
+    display: flex;
+    flex-direction: column;
+    padding-left: 85px;
+    font-size: 21px;
+    padding-top: 10px;
+}
+
+.pibble1 {
+    display: flex;
+    color: rgb(202, 145, 255);
+    padding-top: 35px;
+}
+
+.pibble-linkki {
+    display: flex;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.pibble-linkki1 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-left: 80px;
+    font-size: 21px;
+}
+
+.resources-otsikko {
+    display: flex;
+    color: rgb(202, 145, 255);
+}
+
+.resources-linkki1 {
+    display: flex;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.resources-linkki2 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.resources-linkki3 {
+    display: flex;
+    font-size: 16px;
+}
+
+.resources-linkki4 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.alapalkki-oikea {
+    display: flex;
+}
+
+.community {
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    padding-top: 45px;
+    font-size: 21px;
+}
+
+.community-otsikko {
+    display: flex;
+    color: rgb(202, 145, 255);
+}
+
+.community-linkki1 {
+    display: flex;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.community-linkki2 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.community-linkki3 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.community-linkki4 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.community-linkki5 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-left: 20px;
+    font-size: 21px;
+}
+
+.company-otsikko {
+    display: flex;
+    color: rgb(202, 145, 255);
+}
+
+.company-linkki1 {
+    display: flex;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.company-linkki2 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.company-linkki3 {
+    display: flex;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact1 {
+    display: flex;
+    color: rgb(202, 145, 255);
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+.contact-linkki {
+    display: flex;
+    padding-top: 1px;
+    font-size: 14px;
+}
+
+.alapalkki-ala {
+    display: flex;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    padding-left: 190px;
+    padding-top: 200px;
+    font-size: 20px;
+}
+
+.copyright-kuva {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.copyright-teksti {
+    display: flex;
+    color: rgb(202, 145, 255);
+    padding-top: 20px;
+}
+
+.copyright-teksti2 {
+    display: flex;
+    color: rgb(202, 145, 255);
+}
+
+.copyright-teksti3 {
+    display: flex;
+    color: rgb(202, 145, 255);
+}
+
+.help {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 15px;
+    right: 20px;
+    align-self: end;
+    height: 45px;
+    width: 110px;
+    background-color: #4C5FD5;
+    border-width: 0px;
+    border-radius: 50px;
+    color: white;
+    align-items: center;
+}
+
+.help__kysymysmerkki {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.help__teksti {
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    .banner {
+        width: 1020px;
+    }
+    
+    .ylapalkki {
+        width: 1020px;
+    }
+
+    .jokuhaku {
+        display: none;
+    }
+
+    .haku1000 {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        margin-left: 500px;
+        border-radius: 5px;
+    }
+
+    .nappi-ylapalkki {
+        display: none;
+    }
+
+    .nappi-ylapalkki__toka {
+        display: none;
+    }
+
+    .nappi-ylapalkki__kolmas {
+        display: flex;
+    }
+
+    .ylempi-keskirivi {
+        width: 1020px;
+    }
+
+    .alempi-keskirivi-vasen {
+        padding-left: 300px;
+    }
+
+    .account-teksti {
+        width: 275px;
+    }
+
+    .billing {
+        padding-top: 120px;
+    }
+
+    .support {
+        padding-top: 210px;
+    }
+
+    .alapalkki {
+        width: 1020px;
+        height: 600px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .alapalkki-vasen {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        gap: 75px;
+    }
+
+    .pibble {
+        padding-left: 10px;
+    }
+
+    .resources {
+        padding-left: 10px;
+        align-items: end;
+        padding-top: 46px;
+    }
+
+    .alapalkki-oikea {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        gap: 20px;
+    }
+
+    .community {
+        padding-left: 10px;
+    }
+
+    .company {
+        padding-left: 10px;
+        align-items: end;
+        padding-top: 45px;
+    }
+
+    .contact {
+        align-items: end;
+    }
+
+    .contact1 {
+        padding-top: 5px;
+    }
+
+    .alapalkki-ala {
+        display: flex;
+        align-self: center;
+        padding-top: 20px;
+    }
+
+    .copyright {
+        padding-left: 0px;
+        padding-top: 0px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .alempi-keskirivi {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .alempi-keskirivi-oikea {
+        padding-right: 0px;
+        margin-left: 300px;
+        padding-top: 0px;
+    }
+
+    .alempi-keskirivi-vasen {
+        padding-bottom: 0px;
+    }
+
+    .manage {
+        padding-top: 50px;
+    }
+
+    .authenticate {
+        padding-top: 50px;
+    }
+
+    .account {
+        padding-top: 50px;
+    }
+
+    .billing {
+        padding-top: 50px;
+    }
+
+    .support {
+        padding-top: 50px;
+    }
+}
