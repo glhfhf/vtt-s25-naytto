@@ -657,6 +657,7 @@ a:any-link {
 }
 
 .help__kysymysmerkki {
+    padding-left: 20px;
     font-size: 20px;
 }
 
